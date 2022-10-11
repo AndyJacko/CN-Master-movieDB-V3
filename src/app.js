@@ -62,12 +62,12 @@ const app = async (yargs) => {
             yargs.id,
             yargs.movie
           );
-          console.log(updatedMovie);
+          console.log(`\n\n${updatedMovie}`);
           break;
 
         case "delete":
           const deletedMovie = await newMovieDB.delete(collection, yargs.id);
-          console.log(deletedMovie);
+          console.log(`\n\n${deletedMovie}`);
           break;
 
         default:
